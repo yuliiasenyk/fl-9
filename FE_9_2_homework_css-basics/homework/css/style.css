@@ -1,0 +1,142 @@
+@media print {
+.tm-main-content {
+	margin: 0;
+	padding: 0;
+}
+.tm-sidebar, .heading, .img-fluid, .blocks, .tm-content-box {
+	display: none;
+}
+#home {
+	display: block;
+	margin: auto;
+}
+.tm-banner {
+	height: 260px;
+}
+.tm-content-box.flex-2-col {
+	display: block;
+	padding: 5px 5px 25px 10px;
+	margin: auto;
+	margin-left: 20px;
+	max-width:100%; 
+}
+.tm-team-description-container {
+	max-width: 90%;
+	padding: 0 0 0 20px;
+}
+h2.tm-section-title {
+	color: blue;
+}	
+.flex-item:last-child {
+	text-align: center;   
+}
+}
+
+@media screen {
+	
+/*task 2  */
+.box-bg:hover {
+	background-color: rgba(49,176,213,0.8);	
+}
+.box-bg h2:hover {
+	color: white;
+	font-weight: bold;
+}
+.img-fluid.thumbnail{
+	border-radius: 50%;
+}
+	
+/*task 3 */
+p::first-letter { 
+	color: #76cdd7;
+	font-size: 30px;
+}
+/*task 4  */
+.tm-main-nav, .tm-content-box {
+	box-shadow: 0px 0px 20px #555555;
+}
+	
+/*task 5 triangles*/
+ #home, #about, .heading, .blocks, .flex-2-col, #ideas, #ideas+.tm-content-box, div.flex-2-col+div.tm-content-box{
+ 	position: relative;
+}
+ #home:after, .flex-2-col:after, #about:after, .heading:after, .blocks:after, #ideas:after, #ideas+.tm-content-box:after, div.flex-2-col+div.tm-content-box:after{
+	content: ''; 
+	position: absolute;
+	left: 0px; 
+	top: 0px;
+	border-top: 30px rgba(49,176,213,.9) solid;  
+	border-right: 150px solid transparent;
+	z-index: 1;
+}
+section.blocks>.flex-2-col:after{
+	display: none;
+}	
+	
+/*task 6   */
+.carousel-item .tm-section-title {
+	color: gainsboro;
+	letter-spacing: 5px;
+}
+	
+/*task 7 */
+h2.tm-section-title + p {
+	font-style: italic;
+}
+	
+/*task 8*/
+p.tm-section-description{
+	line-height: 220%;
+	text-indent: 30px;	
+}
+	
+/*task 9 */
+.heading .pad a:visited {
+	color:silver;		
+}
+.heading .pad a:hover {
+	color: #76cdd7;
+	text-decoration: underline double;
+}
+a.text:after	{
+	content: "New";
+	color: red;
+	vertical-align: super;
+	font-size: 10px;
+ }		
+	
+/*task 10 */
+.blocks li.box p {
+	font-size: 17px;
+}
+.blocks li.box p::first-letter {
+	color:black;
+}
+section.blocks ul.gallery-container li.box:nth-child(odd) {
+	background-color: lightgray;
+}
+	
+/*task 11*/
+nav.tm-main-nav li {
+	border-bottom: 1px silver dotted;}
+nav.tm-main-nav li:last-child{
+	border-bottom: none;
+}	
+	
+/*task 12 */
+.submit-btn, div.form-group input {
+	color: red;
+}
+button.submit-btn:hover	{
+	background-color: rgba(49,176,213,.8);
+	color: white;	
+}	
+.mandatory-field::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+	content: '*';
+	font-size: 25px;
+}
+}
