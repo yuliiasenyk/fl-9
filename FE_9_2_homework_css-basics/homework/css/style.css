@@ -69,7 +69,7 @@ p::first-letter {
 	border-right: 150px solid transparent;
 	z-index: 1;
 }
-section.blocks>.flex-2-col:after{
+section.blocks>.flex-2-col:after {
 	display: none;
 }	
 	
@@ -85,7 +85,7 @@ h2.tm-section-title + p {
 }
 	
 /*task 8*/
-p.tm-section-description{
+p.tm-section-description {
 	line-height: 220%;
 	text-indent: 30px;	
 }
@@ -98,7 +98,7 @@ p.tm-section-description{
 	color: #76cdd7;
 	text-decoration: underline double;
 }
-a.text:after	{
+a.text:after {
 	content: "New";
 	color: red;
 	vertical-align: super;
@@ -118,8 +118,9 @@ section.blocks ul.gallery-container li.box:nth-child(odd) {
 	
 /*task 11*/
 nav.tm-main-nav li {
-	border-bottom: 1px silver dotted;}
-nav.tm-main-nav li:last-child{
+	border-bottom: 1px silver dotted;
+}
+nav.tm-main-nav li:last-child {
 	border-bottom: none;
 }	
 	
