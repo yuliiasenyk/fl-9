@@ -1,0 +1,177 @@
+body {
+	background-color: $bg;
+	font-family: $ff;
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 1000px;
+	
+header {
+	display: flex;
+	align-content: space-between;
+	align-items: flex-end;
+
+  .logo img {
+	  width: 400px;
+	}
+
+	nav {
+	  width: 550px; 
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-around;
+	  flex: 1 100%;
+	  height: 50px;
+	  text-transform: uppercase;
+	  margin: 50px 20px 50px 20px;
+	  border-bottom: $border;
+	  border-top: $border;
+	  a {
+			color: $maincolor;
+			text-decoration: none;
+
+      &:hover {
+		  color: lighten($maincolor, 30%);
+      }
+	  }
+	}
+	}
+
+.toolbar {
+	text-align: right;
+
+  input {
+	  font-weight: bold;
+	  width: 180px;
+	  border: $maincolor 1px solid;
+	  padding: 20px 40px;
+	  margin: 20px 5px 20px 10px;
+	  background-color: transparent;
+	}
+}
+
+.toolbar ::placeholder {
+	color: $maincolor;
+	font-size: 22px;
+	}
+
+.post-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+
+  article {
+	  flex: 0 48%;
+	  margin-bottom: 15px;
+	  background-color: $articlec;
+	  
+	img {
+		width: 92%;
+		padding: 10px 25px 5px 20px;
+    }
+
+    div {
+		padding: 10px;
+		
+    .post-description {
+		margin: auto;
+		margin-bottom: 0;
+		font-size: 13px;
+		color: lighten($pot,10%);
+		border-bottom: 1px solid $pot;
+		padding: 0px 0px 20px 20px;
+		}
+
+      h3 {
+		  color: lighten($colP,10%);
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  font-size: 26px;
+		  margin: 3px;
+		  padding: 0 0 0 20px;
+		}
+
+      p {
+		  padding-left: 20px;
+		  padding-top: 0;
+		  color: $colP;
+		  font-size: $size;
+		  margin-bottom: 20px;
+		  margin-top: 3px;
+		  line-height: 160%;
+
+      }
+    }
+  }
+}
+
+.about {
+
+  h1 {
+	  text-transform: uppercase;
+	  text-align: right;
+	  font-weight: bold;
+	  color: darken($maincolor, 5%);
+	  padding-top: 60px;
+	  padding-bottom: 0;
+	}
+
+  p {
+	  color: $colP;
+	  font-size: 18px;
+	  line-height: 160%;
+	}
+
+  img {
+	  max-width: 100%;
+	}
+}
+
+.contact-form{
+	text-align: right;
+	margin-top: 30px;
+
+  h1, h4 {
+	  color: $maincolor;
+	  text-transform: uppercase;
+	  margin: 0;
+	}
+
+  form {
+	  input, textarea {
+		  width: 97%;
+		  margin: 0 0px 20px 0;
+		  padding: 10px 20px;
+		  border: $border;
+		  background-color: transparent;
+		  
+	&::placeholder {
+		color: grey;
+		font-size: 16px;
+		  }
+	  }
+	  
+	  .submit {
+		  background-color: $maincolor;
+		  border: none;
+		  color: white;
+		  font-weight: bold;
+		  width: 200px;
+		  height: 40px;
+		  text-transform: uppercase;
+	  }
+	}
+	}
+
+footer {
+	margin: 6px;
+	padding: 0px;
+	
+	span {
+		color: darken($pot,5%);
+		font-size:12px;
+	}
+	}
+}

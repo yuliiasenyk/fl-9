@@ -1,0 +1,121 @@
+body {
+  background-color: #f0f0f0;
+  font-family: serif;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1000px; }
+  body header {
+    display: flex;
+    align-content: space-between;
+    align-items: flex-end; }
+    body header .logo img {
+      width: 400px; }
+    body header nav {
+      width: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1 100%;
+      height: 50px;
+      text-transform: uppercase;
+      margin: 50px 20px 50px 20px;
+      border-bottom: 1px solid #d1caca;
+      border-top: 1px solid #d1caca; }
+      body header nav a {
+        color: #f2784f;
+        text-decoration: none; }
+        body header nav a:hover {
+          color: #fde5dd; }
+  body .toolbar {
+    text-align: right; }
+    body .toolbar input {
+      font-weight: bold;
+      width: 180px;
+      border: #f2784f 1px solid;
+      padding: 20px 40px;
+      margin: 20px 5px 20px 10px;
+      background-color: transparent; }
+  body .toolbar ::placeholder {
+    color: #f2784f;
+    font-size: 22px; }
+  body .post-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+    body .post-list article {
+      flex: 0 48%;
+      margin-bottom: 15px;
+      background-color: #fcfdff; }
+      body .post-list article img {
+        width: 92%;
+        padding: 10px 25px 5px 20px; }
+      body .post-list article div {
+        padding: 10px; }
+        body .post-list article div .post-description {
+          margin: auto;
+          margin-bottom: 0;
+          font-size: 13px;
+          color: #a5a8aa;
+          border-bottom: 1px solid #8b8e91;
+          padding: 0px 0px 20px 20px; }
+        body .post-list article div h3 {
+          color: #c4cad0;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 26px;
+          margin: 3px;
+          padding: 0 0 0 20px; }
+        body .post-list article div p {
+          padding-left: 20px;
+          padding-top: 0;
+          color: #a7b0ba;
+          font-size: 20px;
+          margin-bottom: 20px;
+          margin-top: 3px;
+          line-height: 160%; }
+  body .about h1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    color: #f06637;
+    padding-top: 60px;
+    padding-bottom: 0; }
+  body .about p {
+    color: #a7b0ba;
+    font-size: 18px;
+    line-height: 160%; }
+  body .about img {
+    max-width: 100%; }
+  body .contact-form {
+    text-align: right;
+    margin-top: 30px; }
+    body .contact-form h1, body .contact-form h4 {
+      color: #f2784f;
+      text-transform: uppercase;
+      margin: 0; }
+    body .contact-form form input, body .contact-form form textarea {
+      width: 97%;
+      margin: 0 0px 20px 0;
+      padding: 10px 20px;
+      border: 1px solid #d1caca;
+      background-color: transparent; }
+      body .contact-form form input::placeholder, body .contact-form form textarea::placeholder {
+        color: grey;
+        font-size: 16px; }
+    body .contact-form form .submit {
+      background-color: #f2784f;
+      border: none;
+      color: white;
+      font-weight: bold;
+      width: 200px;
+      height: 40px;
+      text-transform: uppercase; }
+  body footer {
+    margin: 6px;
+    padding: 0px; }
+    body footer span {
+      color: #7e8185;
+      font-size: 12px; }
