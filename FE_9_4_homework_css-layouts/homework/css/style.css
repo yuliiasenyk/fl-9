@@ -7,6 +7,7 @@ body  {
 	background-color: #F3F3F3;
 font-family: 'Open Sans', sans-serif;
 }
+
 .container{
 	margin: auto;
     max-width: 900px;
@@ -18,6 +19,7 @@ font-family: 'Open Sans', sans-serif;
 	background-color: #F0F0F0;
 	display: flex;
 }
+
 header {
 display: flex;
 background-image: url(../img/apples.jpg);
@@ -89,7 +91,6 @@ a {
     text-decoration: none;
 }
 
-
 .additional {
 	padding: 5px;
 	display: flex;
@@ -154,13 +155,12 @@ left: 10px;
 font-size: 13px;	
 padding: 5px 10px;
 border: none;
-color:white;
+color: #FFF;
 z-index: 3;
 }
 article h3>span {
 	font-weight: 100;
 }
-
 article div.pic::before {
     content: '';
 	position: absolute;
@@ -227,8 +227,6 @@ form div {
 	display: flex;
 }
 
-
-
 .about {
 	background-color: #FFF;
 	margin: 60px 13px;
@@ -277,17 +275,14 @@ font-size: 16px;
 font-size: 13px;
 color: #E8E8E8;
 }
-
 .about div:nth-child(2) p {
 font-style: italic;
 }
-
 .about p + p {
 color: #F3F3F3;
 font-style: normal;
 	margin-top: 4px;
 }
-
 
 footer {
 	background-color: #FFF;
@@ -306,11 +301,11 @@ footer>ul li {
 	margin: 10px;
 	color: #343638;
 }
-	footer>ul li a:hover {
+footer>ul li a:hover {
 		
 font-weight:bold;
 }
-	footer>ul li a:visited {	
+footer>ul li a:visited {	
 color:#B7C8D9;
 }
 footer p {
