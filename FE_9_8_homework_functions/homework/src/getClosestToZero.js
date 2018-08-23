@@ -1,9 +1,9 @@
 function getClosestToZero(...array) {
-	let zero = array[0];
+	let zeroClose = array[0];
 	for (let i = 0; i < array.length; i++) {
-		if (Math.abs(zero) > array[i]) {
+		if (Math.abs(zeroClose) > array[i]) {
 			zero = array[i];
 		}
 	}
-	return zero;
+	return zeroClose;
 }
