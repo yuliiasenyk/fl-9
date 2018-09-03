@@ -17,6 +17,7 @@ function userCard(cardIndex) {
 
     return {
         getCardOptions() {
+            
             return {
                 key,
                 balance,
@@ -71,6 +72,7 @@ class UserAccount {
     }
 
     getCardByKey(key) {
+        
         return this.cards[key - 1];
     }
 }
