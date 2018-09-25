@@ -10,9 +10,7 @@ if (login === null || letters === 0) {
 } else if (login !== 'User') {
 	result = 'I don’t know you';
 } else {
-	getPassword(prompt('Please enter your password', ''));
-}
-function getPassword(password) {
+let password = prompt('Please enter your password', '');
 if (password === null) {
 	result = 'Canceled';
 } else if (password !== 'SuperUser') {
